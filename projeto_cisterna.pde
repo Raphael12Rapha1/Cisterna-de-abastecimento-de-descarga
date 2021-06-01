@@ -57,11 +57,11 @@ void draw() {
   
   fill(255);
   
-  // se o valor for >= 10 a bomba liga
-  if(valor <= 10){
+  // se o valor for <= 7 a bomba liga
+  if(valor <= 7){
     text("Bomba Ligada", width / 2 - textWidth("Bomba Ligada") / 2, 100);
    
-  // se for > 10 a solenoide liga
+  // se for > 7 a solenoide liga
   } else {
     text("Solenoide Ligada", width / 2 - textWidth("Solenoide Ligada") / 2, 100);
   }
