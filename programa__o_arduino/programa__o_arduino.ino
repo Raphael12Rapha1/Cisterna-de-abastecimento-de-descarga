@@ -36,13 +36,13 @@ void loop(){
   ao invez do HIGH
   */
 
-  // se valor >= 8, ele permace no mesmo estado
-  if(cm >= 8){
-    digitalWrite(pinoRele, HIGH);
-
-  // se valor < 8, ele aciona o rele
-  } else{
+  // se valor >= 7, ele permace no mesmo estado
+  if(cm >= 7){
     digitalWrite(pinoRele, LOW);
+
+  // se valor < 7, ele aciona o rele
+  } else{
+    digitalWrite(pinoRele, HIGH);
   }
 
   /*
